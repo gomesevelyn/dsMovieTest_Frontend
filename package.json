@@ -1,0 +1,20 @@
+{
+  "name": "dsmovietest",
+  "version": "1.0.0",
+  "description": "Projeto de testes de aceitação da aplicação DsMovie",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "Evelyn Gomes",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.5.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "faker": "^5.5.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
