@@ -2,12 +2,12 @@ import avaliarFilmePage from '../../pages/avaliarFilme/AvaliarFilmePage';
 import { Given } from "cypress-cucumber-preprocessor/steps";
 
 
-
 Given(/^que eu acesso a aplicação$/, () => {
 	cy.visit('/')
 });
 
-When(/^avaliar um "([^"]*)"$/, (filme) => {
+
+When(/^avaliar um "([^"]*)" com score alto$/, (filme) => {
 	avaliarFilmePage.accessForm();
 	avaliarFilmePage.fillForm(filme);
 	avaliarFilmePage.submit();
